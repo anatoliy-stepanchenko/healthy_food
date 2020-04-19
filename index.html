@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Healthy food</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+	<header id="navbar">
+		<a href="#" class="logo">Good <span>Foods</span></a>
+		<ul>
+			<li><a href="#" class="active">Home</a></li>
+			<li><a href="#">Menu</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+
+		<span class="menuIcon" onclick="menuToggle()"></span>
+	</header>
+	<div class="content">
+		<div class="bannerText" id="slideshowText">
+			<div class="active">
+				<h2>Eat Healthy Stay Healhy</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde facilis sequi dolor veritatis. Odio suscipit harum voluptatem, atque. Quasi reiciendis officiis harum, animi rerum cumque impedit doloremque soluta nesciunt fugit.</p>
+				<a href="#">Read More</a>
+			</div>
+			<div>
+				<h2>Vegan</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quod facere labore eligendi officiis ut qui et eos amet ullam!</p>
+				<a href="#">Read More</a>
+			</div>
+			<div>
+				<h2>Delitios</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam atque, repudiandae, quos explicabo nihil dicta dolorem odio nam quod beatae aperiam officiis, quia repellendus. Cum eligendi blanditiis, id laboriosam eaque.</p>
+				<a href="#">Read More</a>
+			</div>
+		</div>
+		<div class="bannerImg" id="slideshow">
+			<img src="img/11.jpg" alt="" height="400" class="active">
+			<img src="img/22.jpg" alt="" height="400">
+			<img src="img/33.jpg" alt="" height="400">
+		</div>
+	</div>
+	<div class="icons">
+		<ul class="socialIcons">
+			<li><a href=""><img src="img/facebook-logo.png" alt=""></a></li>
+			<li><a href=""><img src="img/instagram.png" alt=""></a></li>
+			<li><a href=""><img src="img/youtube.png" alt=""></a></li>
+		</ul>
+		<ul class="controls">
+			<li><a href=""><img src="img/left1.png" onclick="prevSlide(); prevSlideText()"></a></li>
+			<li><a href=""><img src="img/right1.png" onclick="nextSlide(); nextSlideText()"></a></li>
+		</ul>
+	</div>
+</div>
+
+	<script src="main.js"></script>
+</body>
+</html>
