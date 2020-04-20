@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Healthy food</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="container">
-    <header>
+    <header id="navbar">
         <a href="#" class="logo">Good <span>Foods</span></a>
         <ul>
             <li><a href="#" class="active">Home</a></li>
@@ -15,6 +16,7 @@
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
+        <span class="menuIcon" onclick="menuToggle()"></span>
     </header>
     <div class="content">
         <div class="bannerText" id="slideshowText">
@@ -25,12 +27,12 @@
                 <a href="#">Read More</a>
             </div>
             <div>
-                <h2>Vegan</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quod facere labore eligendi officiis ut qui et eos amet ullam!</p>
+                <h2>Top Dish</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim beatae quibusdam ipsa, recusandae perspiciatis asperiores, ducimus dolorum dolores mollitia esse architecto tempora, atque! Sapiente laudantium qui laboriosam! Modi deleniti sit illum. Laborum.</p>
                 <a href="#">Read More</a>
             </div>
             <div>
-                <h2>Delitios</h2>
+                <h2>Delicious</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam atque, repudiandae, quos explicabo nihil dicta dolorem odio nam
                     quod beatae aperiam officiis, quia repellendus. Cum eligendi blanditiis, id laboriosam eaque.</p>
                 <a href="#">Read More</a>
@@ -44,9 +46,18 @@
     </div>
     <div class="icons">
         <ul class="socialIcons">
-            <li><a href=""><img src="img/facebook-logo.png" alt=""></a></li>
-            <li><a href=""><img src="img/instagram.png" alt=""></a></li>
-            <li><a href=""><img src="img/youtube.png" alt=""></a></li>
+            <div class="button-flipper">
+                <button class="front-button facebook"><i class="fa fa-facebook"></i></button>
+                <button class="back-button facebook">/healthy_shevinonova</button>
+            </div>
+            <div class="button-flipper">
+                <button class="front-button instagram"><i class="fa fa-instagram"></i></button>
+                <button class="back-button instagram">/healthy_shevinonova</button>
+            </div>
+            <div class="button-flipper">
+                <button class="front-button youtube"><i class="fa fa-youtube"></i></button>
+                <button class="back-button youtube">/healthy_shevinonova</button>
+            </div>
         </ul>
         <ul class="controls">
             <li>
@@ -58,7 +69,6 @@
         </ul>
     </div>
 </div>
-
 <script src="main.js"></script>
 </body>
 </html>

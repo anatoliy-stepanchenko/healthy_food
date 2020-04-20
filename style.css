@@ -131,6 +131,9 @@ header ul li a:hover:before, header ul li a.active:before {
 	margin: 20px 0;
 }
 
+p {
+	text-align: justify;
+}
 
 .container .bannerText a {
 	position: relative;
@@ -194,21 +197,6 @@ header ul li a:hover:before, header ul li a.active:before {
 	display: flex;
 }
 
-.icons .socialIcons li {
-	list-style: none;
-	margin-right: 30px;
-}
-
-.icons .socialIcons li img {
-	display: inline-block;
-	max-height: 24px;
-	transition: .5s ease-in-out;
-}
-
-.icons .socialIcons li:hover img {
-	transform: translateY(-10px);
-}
-
 .icons .controls li {
 	list-style: none;
 	margin-left: 20px;
@@ -227,8 +215,67 @@ header ul li a:hover:before, header ul li a.active:before {
 
 .menuIcon {
 		display: none;
-	}
+}
 
+
+/*-------SOCIALICONS-------*/
+.button-flipper{
+	transition: .5s cubic-bezier(.775, .07, .575, .995);
+	transform-style: preserve-3d;
+	margin: 10px;
+}
+
+.button-flipper:hover{
+ 	transform: rotateX(180deg);
+}
+
+.front-button{
+	cursor: pointer;
+	width: 150px;
+	height: 50px;
+	border: none;
+	color: #fff;
+	backface-visibility: hidden;
+	z-index: 2;
+	transform: rotateX(0deg);
+	position: absolute;
+	border-radius: 10px;
+}
+
+.back-button{
+	cursor: pointer;
+	width: 150px;
+	height: 50px;
+	border: none;
+	font-size: 12px;
+	color: #fff;
+	backface-visibility: hidden;
+	transform: rotateX(-180deg);
+	position: relative;
+	border-radius: 10px;
+}
+
+.facebook {
+	background: linear-gradient(45deg, #2a52be, #3a75ce);
+	opacity: .8;
+}
+
+.instagram {
+	background: linear-gradient(45deg, #b12169, #ff2f97);
+	opacity: .8; 
+}
+
+.youtube {
+	background: linear-gradient(45deg, #c4302b, #ff231b);
+	opacity: .8;
+}
+
+.fa {
+	font-size: 36px;
+}
+
+
+/*-------MEDIA-------*/
 @media (max-width: 992px){
 	.container {
 		padding: 20px 50px;
@@ -265,6 +312,10 @@ header ul li a:hover:before, header ul li a.active:before {
 		max-width: 100%;
 		padding-right: 0;
 		text-align: justify;
+	}
+
+	.icons .socialIcons {
+		display: block;
 	}
 
 	header ul {
