@@ -37,7 +37,7 @@ function calcNextIndex(currentIndex, maxIndex) {
 
 function calcPreviousIndex(currentIndex, maxIndex) {
     var previousIndex = currentIndex - 1;
-    if (previousIndex <= 0) {
+    if (previousIndex < 0) {
         return maxIndex - 1;
     }
     return previousIndex;
